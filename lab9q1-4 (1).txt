@@ -1,0 +1,35 @@
+Q1.
+1-S
+2-T
+3-6940
+4-S
+5-6940
+Q2.Ans-D.*P = 75
+
+Q3.char c ='A';
+   double *p = &c;
+Here double pointer is pointing towards a character.so it is wrong.
+Q4.int main()
+{
+   char blocks[3] = {'A','B','C'};  
+   char *ptr = &blocks[0];
+   char temp;
+
+   temp = blocks[0];     // ans-A
+   temp = *(blocks + 2); // ans-C
+   temp = *(ptr + 1);    // ans-B
+   temp = *ptr;          // ans-A
+
+   ptr = blocks + 1;    // ans-4435
+   temp = *ptr;         // ans-B
+   temp = *(ptr + 1);   // ans-C
+
+   ptr = blocks;       // ans-4434
+   temp = *++ptr;      // ans-B
+   temp = ++*ptr;      // ans-C
+   temp = *ptr++;      // ans-C
+   temp = *ptr;        // ans-C
+
+   return 0;
+}
+
