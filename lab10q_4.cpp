@@ -1,45 +1,44 @@
-//point.cpp
+
 #include <iostream>
 using namespace std;
-// class Point represents a two-dimensional point
 class Point
 {
-	private://private data members x,y represent coordinates of the point
+	private:
 	int x,y;
 	public:
-	Point()//default class constructor(with no arguments)
+	Point()
 	{
 		x=0;
 		y=0;
-	}//class constructor sets X, Y to zero when no values are specified
-	Point(int xval,int yval)//class constructor that sets the coordinates x,y to the values xval,yval
+	}
+	Point(int xval,int yval)
 	{
 		x=xval;
 		y=yval;
-	}//class constructor sets X, Y to given values xval, yval
-	void Move(int dx,int dy)//member function for moving a point by dx,dy
+	}
+	void Move(int dx,int dy)
 	{
  		x+=dx;
 		y+=dy;
-	}//member function Move increases the x coordinate by dx and the y coordinate by dy
-	//member functions for getting values of x,y
+	}
+	
 	int Get_x() const
 	{
 		return x;
-	}// Get_x returns the value of the x coordinate
+	}
 	int Get_y() const
 	{
 		return y;
-	}//Get_y returns the value of the y coordinate
+	}
 	void Set_x(int xval)
 	{
 		x=xval;
-	}//Set_x sets the value of x coordinate to xval
+	}
 	void Set_y(int yval)
 	{
 		y=yval;
-	}//Set_y sets the value of y coordinate to yval 
-	void print()//declaration of the member function print to print the coordinate
+	} 
+	void print()
 	{
 		cout<<"("<<x<<","<<y<<")";
 	}
